@@ -10,9 +10,9 @@ public class Main { public static void main(String[] args) {
     System.out.println("Значение переменной a с типом byte равно " + a);
     System.out.println("Значение переменной b с типом short равно " + b);
     System.out.println("Значение переменной c с типом int равно " + c);
-    System.out.println("Значение переменной d с типом short равно " + d);
-    System.out.println("Значение переменной e с типом short равно " + e);
-    System.out.println("Значение переменной f с типом short равно " + f);
+    System.out.println("Значение переменной d с типом long равно " + d);
+    System.out.println("Значение переменной e с типом float равно " + e);
+    System.out.println("Значение переменной f с типом double равно " + f);
 
     // Задача 2
     float g = 27.12f;
@@ -84,15 +84,12 @@ public class Main { public static void main(String[] args) {
     int payMasha = 67760;
     int payDenis = 83690;
     int payKristina = 76230;
-
     int payMashaAfterRaising = payMasha + payMasha*10/100;
     int payDenisAfterRaising = payDenis + payDenis*10/100;
     int payKristinaAfterRaising = payKristina + payKristina*10/100;
-
     int diffPayMashaInYear = (payMashaAfterRaising - payMasha)*12;
     int diffPayDenisInYear = (payDenisAfterRaising - payDenis)*12;
     int diffPayKristinaInYear = (payKristinaAfterRaising - payKristina)*12;
-
     System.out.println("Маша тепенрь получает " + payMashaAfterRaising + " рублей. Годовой доход вырпос на " + diffPayMashaInYear + " рублей.");
     System.out.println("Денис тепенрь получает " + payDenisAfterRaising + " рублей. Годовой доход вырпос на " + diffPayDenisInYear + " рублей.");
     System.out.println("Кристина тепенрь получает " + payKristinaAfterRaising + " рублей. Годовой доход вырпос на " + diffPayKristinaInYear + " рублей.");
