@@ -84,12 +84,15 @@ public class Main { public static void main(String[] args) {
     int payMasha = 67760;
     int payDenis = 83690;
     int payKristina = 76230;
+
     int payMashaAfterRaising = payMasha + payMasha*10/100;
     int payDenisAfterRaising = payDenis + payDenis*10/100;
     int payKristinaAfterRaising = payKristina + payKristina*10/100;
+
     int diffPayMashaInYear = (payMashaAfterRaising - payMasha)*12;
     int diffPayDenisInYear = (payDenisAfterRaising - payDenis)*12;
     int diffPayKristinaInYear = (payKristinaAfterRaising - payKristina)*12;
+
     System.out.println("Маша тепенрь получает " + payMashaAfterRaising + " рублей. Годовой доход вырпос на " + diffPayMashaInYear + " рублей.");
     System.out.println("Денис тепенрь получает " + payDenisAfterRaising + " рублей. Годовой доход вырпос на " + diffPayDenisInYear + " рублей.");
     System.out.println("Кристина тепенрь получает " + payKristinaAfterRaising + " рублей. Годовой доход вырпос на " + diffPayKristinaInYear + " рублей.");
