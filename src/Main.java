@@ -27,20 +27,20 @@ public class Main { public static void main(String[] args) {
     byte studentsNumberLp = 23;
     byte studentsNumberAs = 27;
     byte studentsNumberEa = 30;
-    int studentsNumber = studentsNumberLp + studentsNumberAs + studentsNumberEa;
-    int paperNumber = 480;
-    int paperForEachStudent = paperNumber / studentsNumber;
+    byte studentsNumber =(byte) (studentsNumberLp + studentsNumberAs + studentsNumberEa);
+    short paperNumber = 480;
+    byte paperForEachStudent = (byte) (paperNumber / studentsNumber);
     System.out.println("На каждого ученика рассчитано "+ paperForEachStudent + " листов бумаги.");
 
    // Задача 4
     byte bottleNumberInTwoMinutes = 16;
     byte minutes = 2;
-    int bottleNumberInMinute = bottleNumberInTwoMinutes/minutes;
+    byte bottleNumberInMinute = (byte) (bottleNumberInTwoMinutes/minutes);
     minutes = 20;
-    int bottleNumberInTime = bottleNumberInMinute * minutes;
+    short bottleNumberInTime =(short) (bottleNumberInMinute * minutes);
     System.out.println("За " + minutes + " минут машина произвела " + bottleNumberInTime +" штук бутылок");
-    int minutesInDay = 24*60;
-    int bottleNumberInDay = bottleNumberInMinute * minutesInDay;
+    short minutesInDay = 24*60;
+    short bottleNumberInDay =(short) (bottleNumberInMinute * minutesInDay);
     System.out.println("За сутки машина произвела " + bottleNumberInDay +" штук бутылок");
     int minutesInThreeDay = minutesInDay*3;
     int bottleNumberInThreeDay = bottleNumberInMinute * minutesInThreeDay;
@@ -52,9 +52,9 @@ public class Main { public static void main(String[] args) {
     // Задача 5
     byte whitePaintForOneClass = 2;
     byte brownPaintForOneClass = 4;
-    int numberClasses = 120/(whitePaintForOneClass + brownPaintForOneClass);
-    int whitePaintForAllClasses = whitePaintForOneClass * numberClasses;
-    int brownPaintForAllClasses = brownPaintForOneClass * numberClasses;
+    byte numberClasses =(byte) (120/(whitePaintForOneClass + brownPaintForOneClass));
+    byte whitePaintForAllClasses =(byte)(whitePaintForOneClass * numberClasses);
+    byte brownPaintForAllClasses = (byte)(brownPaintForOneClass * numberClasses);
     System.out.println("В школе, где "+ numberClasses + " классов, нужно " + whitePaintForAllClasses + " банок белой краски и "+ brownPaintForAllClasses + " банок коричневой краски.");
 
    // Задача 6
@@ -62,7 +62,7 @@ public class Main { public static void main(String[] args) {
     short milkWeight = 2*105;
     short iceCreamWeight = 2*100;
     short eggsWeight = 4*70;
-    int breakfastWeight = bananaWeight + milkWeight + iceCreamWeight + eggsWeight;
+    short breakfastWeight = (short)( bananaWeight + milkWeight + iceCreamWeight + eggsWeight);
     System.out.println("Вес завтрака в граммах " + breakfastWeight + " г.");
     float breakfastWeightInKg = (float) breakfastWeight/100;
     System.out.println("Вес завтрака в килограммах "+ breakfastWeightInKg + " кг.");
@@ -71,13 +71,13 @@ public class Main { public static void main(String[] args) {
     byte weighLoss = 7;
     short weighLossInGrams = 7*1000;
     short gramsInDay = 250;
-    int days = weighLossInGrams / gramsInDay;
+    byte days = (byte)(weighLossInGrams / gramsInDay);
     System.out.println("Если спортсмен будет худеть в день на " + gramsInDay + "г., то ему потребуется " + days + " дней, чтобы похудеть на "+ weighLoss + " кг.");
     gramsInDay = 500;
-    days = weighLossInGrams / gramsInDay;
+    days = (byte)(weighLossInGrams / gramsInDay);
     System.out.println("Если спортсмен будет худеть в день на " + gramsInDay + "г., то ему потребуется " + days + " дней, чтобы похудеть на "+ weighLoss + " кг.");
     short averageGrams = (250+500)/2;
-    days = weighLossInGrams/averageGrams;
+    days = (byte)(weighLossInGrams/averageGrams);
     System.out.println("В среднем спортсмен похудеет за " + days + " дней на "+ weighLoss + " кг.");
 
     // Задача 8
